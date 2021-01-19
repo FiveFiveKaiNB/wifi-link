@@ -1,0 +1,30 @@
+{
+  "id": "1362820",
+  "name": "徕克民宿",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "6233570",
+      "name": "arrow-left",
+      "font_class": "arrow-left",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "7159489",
+      "name": "arrow-right",
+      "font_class": "arrow-right",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "12459123",
+      "name": "home",
+      "font_class": "home",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+.service {
+  .service-mask {
+    position: fixed;
+    // z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100vh;
+    height: 99vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    z-index: -1;
+  }
+  .details {
+    position: fixed;
+    z-index: 10;
+    bottom: 0px;
+    background: #ffffff;
+    width: 100%;
+    left: 0;
+    box-shadow:0px -5px 11px 0px rgba(0,0,0,0.07),0px -1px 4px 0px rgba(0,0,0,0.15);
+    border-radius:33px 33px 0px 0px;
+    transition: all 0.3s;
+    height: 0;
+
+    .details-info {
+      position: relative;
+      height: 75vh;
+      .details-title {
+        width: 100%;
+        height: 100px;
+        padding-top: 40px;
+        position: relative;
+        text-align: center;
+    
+        .icon-text {
+          // width: 100%;
+          margin: 0 auto;
+          display: flex;
+          justify-content:center;
+          .icon {
+            margin-top: 5px;
+            margin-right: 20px;
+            width: 47px;
+            height: 46px;
+          }
+          .name {
+            font-size:34px;
+            font-weight:400;
+            color:rgba(0,0,0,1);
+          }
+        }
+    
+        .detail-close {
+          width: 30px;
+          height: 30px;
+          padding: 5px;
+          position: absolute;
+          right: 30px;
+          top: 35px;
+        }
+        
+      }
+      .wifi {
+        position: relative;
+        width: 100%;
+        height: 90%;
+        text-align: center;
+        .wifi-bgc {
+          width: 537px;
+          height: 537px;
+          margin-top: 10px;
+        }
+        .connecting {
+          font-size:36px;
+          font-family:PingFangSC-Medium,PingFang SC;
+          font-weight:500;
+          color:rgba(27,81,101,1);
+          margin-top: 20px;
+        }
+        .connecting-wifi {
+          font-size: 36px;
+          font-weight: 400;
+          color: #262626;
+          margin-bottom: 10px;
+        }
+      
+        .connected-btn {
+          position: absolute;
+          width: 296px;
+          height: 88px;
+          background: #4BBDD0;
+          box-shadow: 0px 16px 16px 0px rgba(34, 133, 149, 0.26), 0px 0px 16px 0px rgba(34, 133, 149, 0.2);
+          border-radius: 20px;
+          text-align: center;
+          line-height: 88px;
+          font-size: 32px;
+          font-weight: 400;
+          color: #FFFFFF;
+          bottom: 80px;
+          left: 50%;
+          transform: translateX((-50%));
+        }
+        .connected-btns {
+          display: flex;
+          position: absolute;
+          bottom: 55px;
+          .connected-success {
+            // position: absolute;
+            width: 296px;
+            height: 88px;
+            background: #4BBDD0;
+            box-shadow: 0px 16px 16px 0px rgba(34, 133, 149, 0.26), 0px 0px 16px 0px rgba(34, 133, 149, 0.2);
+            border-radius: 20px;
+            text-align: center;
+            line-height: 88px;
+            font-size: 32px;
+            font-weight: 400;
+            color: #FFFFFF;
+            margin-right: 38px;
+            margin-left: 60px;
+          }
+          .handle-show-password {
+            width: 296px;
+            height: 88px;
+            border-radius: 20px;
+            border: 2px solid #4BBDD0;
+            text-align: center;
+            line-height: 88px;
+            font-size: 32px;
+            font-weight: 400;
+            color: #4BBDD0;
+          }
+        }
+      
+        .connecting-state {
+          margin: 0 auto;
+          margin-bottom: 12px;
+          width: 370px;
+          display: flex;
+          justify-content: space-between;
+          .connecting-text {
+            font-size: 28px;
+            font-weight: 400;
+            color: #8C8C8C;
+          }
+          .connecting-icon {
+            width: 32px;
+            height: 32px;
+          }
+        }
+      
+        .connect-fail {
+          .fail-bgc {
+            width: 450px;
+            height: 450px;
+          }
+          .error-msg {
+            margin-bottom: 10px;
+            font-size: 36px;
+            font-weight: 400;
+            color: #262626;
+          }
+          .error-tip {
+            margin-bottom: 10px;
+            font-size: 28px;
+            font-weight: 400;
+            color: #8C8C8C;
+            text-align: left;
+            transform: translateX(21%);
+            width: 75%;
+          }
+          .fail-btns {
+            display: flex;
+            position: absolute;
+            bottom: 80px;
+            .handle-connect {
+              font-size: 32px;
+              font-weight: 400;
+              color: #4BBDD0;
+              width: 296px;
+              height: 88px;
+              border-radius: 20px;
+              border: 2px solid #4BBDD0;
+              text-align: center;
+              margin-right: 38px;
+              margin-left: 60px;
+              line-height: 88px;
+            }
+            .handle-reconnect {
+              width: 296px;
+              height: 88px;
+              background: #4BBDD0;
+              box-shadow: 0px 16px 16px 0px rgba(34, 133, 149, 0.26), 0px 0px 16px 0px rgba(34, 133, 149, 0.2);
+              border-radius: 20px;
+              text-align: center;
+              line-height: 88px;
+              font-size: 32px;
+              font-weight: 400;
+              color: #FFFFFF;
+            }
+          }
+        }
+      
+        .handle-connect {
+          // position: relative;
+          .wifi-item {
+            padding-top: 80px;
+            .wifi-label {
+              font-size: 28px;
+              font-weight: 400;
+              color: #8C8C8C;
+              margin-bottom: 8px;
+            }
+            .wifi-value {
+              font-size: 36px;
+              font-weight: 400;
+              color: #262626;
+            }
+          }
+          .handle-wifi-btns {
+            display: flex;
+            position: absolute;
+            bottom: 55px;
+            .copy-password {
+              width: 296px;
+              height: 88px;
+              background: #4BBDD0;
+              box-shadow: 0px 16px 16px 0px rgba(34, 133, 149, 0.26), 0px 0px 16px 0px rgba(34, 133, 149, 0.2);
+              border-radius: 20px;
+              text-align: center;
+              line-height: 88px;
+              font-size: 32px;
+              font-weight: 400;
+              color: #FFFFFF;
+              
+            }
+            .return-page {
+              width: 296px;
+              height: 88px;
+              border-radius: 20px;
+              border: 2px solid #4BBDD0;
+              text-align: center;
+              line-height: 88px;
+              font-size: 32px;
+              margin-right: 38px;
+              margin-left: 60px;
+              font-weight: 400;
+              color: #4BBDD0;
+            }
+          }
+        }
+      }
+      .submit {
+        width:686px;
+        height:88px;
+        background:linear-gradient(270deg,rgba(75,189,208,1) 0%,rgba(88,211,218,1) 100%);
+        box-shadow:0px 8px 8px 0px rgba(34,133,149,0.26),0px 0px 8px 0px rgba(34,133,149,0.2);
+        border-radius:10px;
+        font-size:32px;
+        font-family:PingFangSC-Medium,PingFang SC;
+        font-weight:500;
+        color:rgba(255,255,255,1);
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  
+}
+

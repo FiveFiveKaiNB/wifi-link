@@ -1,0 +1,42 @@
+$transitionTime: 0.3s;
+
+.container {
+  top: 0;
+  position: fixed;
+  z-index: 9999999;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: #ffffff;
+  transition: background $transitionTime, color $transitionTime, fill $transitionTime;
+  
+  .back-icon {
+    position: absolute;
+    left: 32px;
+    font-size: 32px;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+  }
+
+  .home-icon {
+    position: absolute;
+    left: 32px;
+    font-size: 32px;
+    border-radius: 50%;
+    border: 1px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title {
+    margin: auto;
+    width: 590px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+  }
+}
